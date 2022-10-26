@@ -27,7 +27,7 @@
   --font-large: 48px;
   --font-medium: 28px;
   --font-regular: 18px;
-  --font-sall: 16px;
+  --font-small: 16px;
   --font-micro: 14px;
 
   /* Font weight */
@@ -37,6 +37,9 @@
 
   /* size */
   --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -129,6 +132,10 @@ p {
   border: 1px solid var(--color-white);
 }
 
+.navbar__menu__item {
+  transition: all var(--animation-duration) ease;
+}
+
 .navbar__menu__item:hover {
   background-color: var(--color-blue);
   border-radius: 4px;
@@ -161,4 +168,77 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-black);
   border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  color: var(--color-dark-blue);
+  border: 1px solid var(--color-dark-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+
+.major__icon:hover i {
+  color: var(--color-yellow);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.academy {
+  display: flex;
+  align-items: center;
+}
+
+.academy__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.academy__name,
+.academy__period {
+  color: var(--color-light-grey);
+}
+
+.academy__name {
+  font-size: var(--font-small);
+}
+
+.academy__period {
+  font-size: var(--font-micro);
+}
+
+.academy img {
+  width: 100px;
 }
