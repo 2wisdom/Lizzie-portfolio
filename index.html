@@ -1,81 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav id="navbar">
-            <div class="navbar__logo">
-                <img class="fab fa-diaspora" src="./imgs/girl_emoji.png" alt="로고 이미지">
-                <a href="#">Lizzie</a>
+  <head> </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img
+          class="fab fa-diaspora"
+          src="./imgs/girl_emoji.png"
+          alt="로고 이미지"
+        />
+        <a href="#">Lizzie</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">My work</li>
+        <li class="navbar__menu__item">Testimonial</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+      <img
+        src="./imgs/me.png"
+        alt="Lizzie's profile photo"
+        class="home_avatar"
+      />
+      <h1 class="home__title">
+        응애 <br />
+        나 애기개발자
+      </h1>
+      <h2 class="home__description">난 아직 애기인데 인생이 날 힘들게 해</h2>
+      <button class="home__contact">Contact Me</button>
+    </section>
+    <!-- about -->
+    <section id="about">
+      <h1>About me</h1>
+      <p>나는 이런 사람이얌</p>
+      <div class="about__majors">
+        <div class="mjor">
+          <div class="major__icon">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="major__title">HTML</div>
+          <div class="major__description">HTML</div>
+        </div>
+        <div class="mjor">
+          <div class="major__icon">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="major__title">CSS</div>
+          <div class="major__description">CSS</div>
+        </div>
+        <div class="mjor">
+          <div class="major__icon">
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+          <div class="major__title">JavaScript</div>
+          <div class="major__description">JavaScript</div>
+        </div>
+      </div>
+      <div class="about__academy">
+        <div class="academy">
+          <img
+            src="https://elice.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F55d44f47-b328-4045-8a02-61c34f384eab%2FLogo_TypeB_purple.png?table=block&id=2278b101-b8f4-4739-a98c-e8591b78dbba&spaceId=530d1033-cf9f-41a2-b140-62d3e90887dd&width=480&userId=&cache=v2"
+            alt="elice AI track logo"
+            class="academy__logo"
+          />
+          <p class="academy__name">elice AI track 5기</p>
+          <p class="academy__period">2022.06.27 ~ 2022.12.16</p>
+        </div>
+      </div>
+    </section>
+    <!-- skills -->
+    <section id="skills">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p>이런 스킬을 씁니다. 이야아압 !! 매직클로 !!</p>
+      <div class="skillset">
+        <div class="skillset_left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill_description">
+              <span> HTML </span>
+              <span> 99% </span>
             </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__menu__item">Home</li>
-                    <li class="navbar__menu__item">About</li>
-                    <li class="navbar__menu__item">Skills</li>
-                    <li class="navbar__menu__item">My work</li>
-                    <li class="navbar__menu__item">Testimonial</li>
-                    <li class="navbar__menu__item">Contact</li>
-                </ul>
-        </nav>
-        <!-- Home -->
-        <section id="home">
-            <img 
-            src="./imgs/me.jpg" 
-            alt="Lizzie's profile photo" 
-            class="home_avatar"
-            />
-            <h1 class="home__title">응애 <br /> 나 애기개발자</h1>
-            <h2 class="home__description">난 아직 애기인데 인생이 날 힘들게 해</h2>
-            <button class="home__contact">Contact Me</button>
-        </section>
-        <!-- about -->
-        <section id="about">
-            <h1>About me</h1>
-            <p>나는 이런 사람이얌</p>
-            <div class="about__majors">
-                <div class="mjor">
-                    <div class="major__icon">
-                        <i class="fa-brands fa-html5"></i>
-                    </div>
-                    <div class="major__title">HTML</div>
-                    <div class="major__description">HTML</div>
-                </div>
-                <div class="mjor">
-                    <div class="major__icon">
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-                    <div class="major__title">CSS</div>
-                    <div class="major__description">CSS</div>
-                </div>
-                <div class="mjor">
-                    <div class="major__icon">
-                        <i class="fa-brands fa-square-js"></i>
-                    </div>
-                    <div class="major__title">JavaScript</div>
-                    <div class="major__description">JavaScript</div>
-                </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
             </div>
-            <div class="about__academy">
-                <div class="academy">
-                    <img 
-                    src="https://elice.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F55d44f47-b328-4045-8a02-61c34f384eab%2FLogo_TypeB_purple.png?table=block&id=2278b101-b8f4-4739-a98c-e8591b78dbba&spaceId=530d1033-cf9f-41a2-b140-62d3e90887dd&width=480&userId=&cache=v2" 
-                    alt="elice AI track logo" 
-                    class="academy__logo" 
-                    />
-                    <p class="academy__name">elice AI track 5기</p>
-                    <p class="academy__period">2022.06.27 ~ 2022.12.16</p>
-                </div>
+          </div>
+          <div class="skill">
+            <div class="skill_description">
+              <span> CSS </span>
+              <span> 99% </span>
             </div>
-        </section>
-        <!-- skills -->
-        <section id="skills"></section>
-        <!-- work -->
-        <section id="work"></section>
-        <!-- testimonials -->
-        <section id="testimonials"></section>
-         <!-- contact -->
-        <section id="contact"></section>
-    </body>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_description">
+              <span> JavaScript </span>
+              <span> 99% </span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_description">
+              <span> TypeScript </span>
+              <span> 99% </span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_description">
+              <span> React </span>
+              <span> 99% </span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Figma</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>watching Youtube</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- work -->
+    <section id="work"></section>
+    <!-- testimonials -->
+    <section id="testimonials"></section>
+    <!-- contact -->
+    <section id="contact"></section>
+  </body>
 </html>
