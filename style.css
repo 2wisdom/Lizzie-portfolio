@@ -1,17 +1,26 @@
+/* Font family */
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Global */
 :root {
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-blue: #73aace;
-  --color-yellow: #fff7d1;
-  --color-orange: #feb546;
+  --color-light-blue: #8ecae6;
+  --color-blue: #219ebc;
+  --color-dark-blue: #023047;
+  --color-yellow: #ffb703;
+  --color-orange: #fb8500;
   --color-black: #000000;
 
   /* Font size */
@@ -27,11 +36,28 @@
   --weight-regular: 400;
 
   /* size */
+  --size-border-radius: 4px;
 }
 
 /* Universal tags */
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: "NanumSquareRound", sans-serif;
+  margin: 0;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Typography */
@@ -61,4 +87,39 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-light-blue);
+  align-items: center;
+  color: var(--color-white);
+  padding: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-blue);
+  border-radius: 4px;
 }
