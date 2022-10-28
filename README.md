@@ -1,2 +1,2 @@
 # portfolio
- Lizzie's portfolio
+ Lizzie's portfolio (...ing)
