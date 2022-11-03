@@ -5,6 +5,7 @@ const navbar = document.querySelector("#navbar");
 const navbarLogo = document.querySelector(".navbar__logo");
 const navbarLogoName = document.querySelector(".navbar__logoName");
 const navbarMenuItem = document.querySelector(".navbar__menu__item");
+const navbarToggleBtn = document.querySelector(".navbar__toggleBtn");
 const navbarHeight = navbar.getBoundingClientRect().height;
 
 document.addEventListener("scroll", () => {
@@ -13,11 +14,13 @@ document.addEventListener("scroll", () => {
     navbarLogo.classList.add("navbarLogo--white");
     navbarLogoName.classList.add("navbarLogoName--white");
     navbarMenuItem.classList.add("navbarMenuItem--white");
+    navbarToggleBtn.classList.add("navbar__toggleBtn--white");
   } else {
     navbar.classList.remove("navbar--white");
     navbarLogo.classList.remove("navbarLogo--white");
     navbarLogoName.classList.remove("navbarLogoName--white");
     navbarMenuItem.classList.remove("navbarMenuItem--white");
+    navbarToggleBtn.classList.remove("navbar__toggleBtn--white");
   }
 });
 
@@ -29,7 +32,15 @@ navbarMenu.addEventListener("click", (e) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove("open");
   scrollIntoView(link);
+});
+
+// Navbar toggle button for small screen
+// const navbarToggleBtn = document.querySelector(".navbar__toggleBtn");
+navbarToggleBtn.addEventListener("click", () => {
+  console.log("click!");
+  navbarMenu.classList.toggle("open");
 });
 
 // Handle click on "contact me" button on home
