@@ -1,2 +1,1 @@
-# portfolio
- Lizzie's portfolio (...ing)
+# portfolio (진행중)
