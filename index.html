@@ -24,9 +24,9 @@
         <li class="navbar__menu__item" data-link="#about">About</li>
         <li class="navbar__menu__item" data-link="#skills">Skills</li>
         <li class="navbar__menu__item" data-link="#work">My work</li>
-        <li class="navbar__menu__item" data-link="#testimonials">
+        <!-- <li class="navbar__menu__item" data-link="#testimonials">
           Testimonial
-        </li>
+        </li> -->
         <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>
       <!-- </div> -->
@@ -46,7 +46,7 @@
           class="home__avatar"
         />
         <h1 class="home__title">Lee Ji Hye</h1>
-        <h2 class="home__description">즐거움을 쫓는 애기개발자</h2>
+        <h2 class="home__description">즐거움엔 끝이없다!</h2>
         <button class="home__contact" data-link="#contact">Contact Me</button>
       </div>
     </section>
@@ -54,28 +54,31 @@
     <!-- about -->
     <section id="about" class="section section__container">
       <h1>About me</h1>
-      <p>나는 이런 사람이얌</p>
+      <p>
+        처음에는 유튜브로 혼자 웹개발에대한 공부를 시작했습니다.<br />
+        Javascript를 사용해 처음으로 웹페이지에 야간모드 기능을 넣었을 때 그
+        신기하고 짜릿했던 경험을 잊을 수 없어요 🤣 <br />
+        그 후 더욱 본격적으로 공부를 해보고자 부트캠프를 알아봤고, 6개월간의
+        부트캠프안에서 3번의 팀프로젝트, 2번의 팀장 경험이 있습니다! <br />
+        아직도 웹페이지에 뭔가를 구현해낸다는건 가슴뛰는 일이에요. ✨ 언제나
+        즐거운 개발자 Lizzie 입니다! ✨
+      </p>
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
-            <i class="fa-brands fa-html5"></i>
+            <i class="fa-solid fa-computer"></i>
           </div>
-          <h2 class="major__title">HTML</h2>
-          <div class="major__description">HTML</div>
+          <h2 class="major__title">Frontend</h2>
+          <div class="major__description">
+            Javascript Typescript Next.js React.js HTML/CSS
+          </div>
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-solid fa-server"></i>
           </div>
-          <h2 class="major__title">CSS</h2>
-          <div class="major__description">CSS</div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-square-js"></i>
-          </div>
-          <h2 class="major__title">JavaScript</h2>
-          <div class="major__description">JavaScript</div>
+          <h2 class="major__title">Backend</h2>
+          <div class="major__description">Node.js Express MongoDB</div>
         </div>
       </div>
       <div class="about__academy">
@@ -97,14 +100,23 @@
     <section id="skills" class="section">
       <div class="section__container">
         <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>넓게 펼치고 다시 하나씩 깊게 파는</p>
+        <!-- <h2>Skills & Attributes</h2> -->
+        <p>새로운 기술은 언제나 환영 !</p>
         <div class="skillset">
           <div class="skillset__left">
             <h3 class="skillset__title">Skills</h3>
             <div class="skill">
               <div class="skill__description">
                 <span> HTML </span>
+                <span> 70% </span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span> CSS </span>
                 <span> 60% </span>
               </div>
               <div class="skill__bar">
@@ -113,38 +125,29 @@
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span> CSS </span>
-                <span> 40% </span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 40%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
                 <span> JavaScript</span>
-                <span> 15% </span>
+                <span> 50% </span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 15%"></div>
+                <div class="skill__value" style="width: 50%"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span> TypeScript </span>
-                <span> 2% </span>
+                <span> 20% </span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 2%"></div>
+                <div class="skill__value" style="width: 20%"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span> React </span>
-                <span> 10% </span>
+                <span> 45% </span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 10%"></div>
+                <div class="skill__value" style="width: 45%"></div>
               </div>
             </div>
           </div>
@@ -153,8 +156,6 @@
               <h3 class="skillset__title">Tools</h3>
               <ul class="tools__list">
                 <li><span>Visual Studio Code</span></li>
-                <li><span>React Query</span></li>
-                <li><span>React hook form</span></li>
               </ul>
             </div>
             <div class="etc">
@@ -174,46 +175,45 @@
     <section id="work" class="section">
       <div class="section__container">
         <h1>Projects</h1>
-        <h3>
-          아직 많진 않지만 항상 새로운 툴과 라이브러리를 공부하며 프로젝트를
-          진행했습니다.
-        </h3>
-        <div class="work__categories">
+        <!-- <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
             All<span class="category__count">3</span>
           </button>
-          <button class="category__btn" data-filter="academy">
-            Academy<span class="category__count">2</span>
+          <button class="category__btn" data-filter="team-project">
+            TeamProject<span class="category__count">2</span>
           </button>
           <button class="category__btn" data-filter="personal">
             Personal<span class="category__count">1</span>
           </button>
-        </div>
+        </div> -->
 
         <div class="work__projects">
+          <!-- 잎게뭐야 -->
           <a
-            href="https://github.com/2wisdom/Portfolio-sharing-website"
+            href="https://github.com/2wisdom/project_3"
             class="project"
             target="blank"
-            data-type="academy"
+            data-type="team-project"
           >
             <img
               class="project__img"
-              src="./imgs/projects/portfolio-sharing-web-service.png"
-              alt="portFolio sharing web service"
+              src="./imgs/projects/project_3.png"
+              alt="leaves-get-more-yards"
             />
             <div class="project__description">
-              <h3>포트폴리오 공유 웹 사이트</h3>
+              <h3>잎게뭐야</h3>
               <span
-                >Git을 이용한 첫 팀 프로젝트<br />React Bootstrap Axios</span
+                >이미지로 식물 예측이 가능한 온라인 커뮤니티 웹 서비스<br />
+                BE: Node.js Express MongoDB</span
               >
             </div>
           </a>
+          <!-- 하루한끼 -->
           <a
             href="https://github.com/2wisdom/Just-One-Meal"
             class="project"
             target="blank"
-            data-type="academy"
+            data-type="team-project"
           >
             <img
               class="project__img"
@@ -223,11 +223,34 @@
             <div class="project__description">
               <h3>Just One Meal</h3>
               <span
-                >기획부터 시작한 두번째 팀 프로젝트<br />React MUI Axios</span
+                >하루한끼 채식으로 환경보호에 동참하자는 취지의 채식 레시피 웹
+                서비스<br />
+                FE: JS React Axios MUI ReCharts</span
               >
             </div>
           </a>
+          <!--포트폴리오 공유 웹 사이트 -->
           <a
+            href="https://github.com/2wisdom/Portfolio-sharing-website"
+            class="project"
+            target="blank"
+            data-type="team-project"
+          >
+            <img
+              class="project__img"
+              src="./imgs/projects/portfolio-sharing-web-service.png"
+              alt="portFolio sharing web service"
+            />
+            <div class="project__description">
+              <h3>포트폴리오 공유 웹 사이트</h3>
+              <span
+                >본인의 포트폴리오 정보를 공유하는 웹 서비스<br />FE: JS React
+                Axios Bootstrap</span
+              >
+            </div>
+          </a>
+
+          <!-- <a
             href="https://github.com/2wisdom/CGV_clonecoding"
             class="project"
             target="blank"
@@ -240,39 +263,7 @@
             />
             <div class="project__description">
               <h3>CGV Mainpage 클론 코딩</h3>
-              <span>첫 스터디 클론코딩<br />HTML CSS JavaScript</span>
-            </div>
-          </a>
-          <!-- <a
-            href="https://github.com/2wisdom/jboard"
-            class="project"
-            target="blank"
-            data-type="personal"
-          >
-            <img
-              class="project__img"
-              src="./imgs/projects/project example.png"
-              alt="Jboard"
-            />
-            <div class="project__description">
-              <h3>Jboard</h3>
-              <span>personal projects with React and TypeScript</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/2wisdom/my_animal_best"
-            class="project"
-            target="blank"
-            data-type="personal"
-          >
-            <img
-              class="project__img"
-              src="./imgs/projects/project example.png"
-              alt="My Animal Best"
-            />
-            <div class="project__description">
-              <h3>My Animal Best</h3>
-              <span>personal project with React JavaScript Firebase</span>
+              <span>첫 스터디 클론코딩<br />JS HTML CSS</span>
             </div>
           </a> -->
         </div>
@@ -280,7 +271,7 @@
     </section>
 
     <!-- testimonials -->
-    <section id="testimonials" class="section">
+    <!-- <section id="testimonials" class="section">
       <div class="section__container">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
@@ -319,21 +310,24 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- contact -->
     <section id="contact" class="section">
       <h1 class="contact__title">Let's talk</h1>
-      <h2 class="contact__email">leejihye7117@gmail.com</h2>
+      <!-- <h2 class="contact__email">leejihye7117@gmail.com</h2> -->
       <div class="contact__links">
         <a href="https://github.com/2wisdom" target="_blank">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/2wisdom/" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
+        <a href="mailto:leejihye7117@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
         </a>
+        <!-- <a href="https://www.linkedin.com/in/2wisdom/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a> -->
       </div>
-      <p class="contact__rights">2022 Lizzie - All rights reserved</p>
+      <p class="contact__rights">2023 Lizzie - All rights reserved</p>
     </section>
 
     <!-- Arrow up -->
